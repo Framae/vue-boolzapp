@@ -22,11 +22,15 @@
     background-color: #d4dbdb;
 }
 
+.vh::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
 .boolzapp {
     width: 80%;
-    min-width: 600px;
     height: calc(100vh - 40px);
-    border: 1px solid black;
     position: absolute;
     top: 20px;
     left: 150px;
@@ -34,6 +38,46 @@
     bottom: 20px;
 }
 
-header {
-    
+.sidebar {
+    height: calc(100vh - 40px);
+    width: 400px;
+    position: absolute;
+    float: left;
+}
+
+.sidebar-top {
+    height: 60px;
+    width: 400px;
+    background-color: #ebebeb;
+    border-right: 2px solid gray;
+}
+
+.sidebar-middle {
+    height: 80px;
+    width: 400px;
+    background-color: #8edafd;
+}
+
+.sidebar-bottom {
+    width: 400px;
+    height: calc(100vh - 180px);
+    background-color: white;
+    overflow-y: scroll;
+}
+
+.ground {
+    height: 100%;
+    width: calc(100vw - 400px);
+}
+
+.top-ground {
+    height: 60px;
+    width: calc(100vw - 400px);
+    background-color: #ebebeb;
+}
+
+.bottom-ground {
+    width: calc(100vw - 400px);
+    height: calc(100vh - 100px);
+    background-color: red;
 }
