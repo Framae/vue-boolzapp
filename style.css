@@ -82,6 +82,25 @@
     height: 80px;
     width: 100%;
     background-color: #8edafd;
+    display: flex;
+    align-items: center;
+}
+
+.campanella {
+    width: 20%;
+    text-align: center;
+}
+
+.bell-text {
+    width: 80%;
+}
+
+.campanella i {
+    color: #8edafd;
+    background-color: #fff;
+    font-size: 30px;
+    padding: 15px;
+    border-radius: 50%;
 }
 
 .sidebar-search {
@@ -93,9 +112,25 @@
     align-items: center;
 }
 
-.search {
+.search-left {
     width: 98%;
+    height: 98%;
     margin: auto;
+    position: relative;
+}
+
+.search-left::before {
+    font-family: “Font Awesome\ 5 Free”; 
+    content: “\f002”;
+    font-weight: 600; /* Fix version 5.0.9 + */
+    color: #B1B1B1;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.search {
+    width: 100%;
     height: 90%;
     border-radius: 5px;
     background-color: white;
@@ -106,7 +141,7 @@
 
 .sidebar-bottom {
     width: 100%;
-    height: calc(100vh - 180px);
+    height: calc(100% - 185px);
     background-color: white;
     overflow-y: scroll;
 }
@@ -140,16 +175,41 @@
     justify-content: space-between;
 }
 
-.mikeDets span {
+.avatarDets span {
     font-size: 10px;
     color: #6a7376;
 }
+
+/* middle-ground rules*/
 
 .middle-ground {
     background-image: url(img/mine.jpg);
     width: 100%;
     height: calc(100% - 120px);
     overflow-y: scroll;
+}
+
+.message {
+    max-width: 40%;
+    min-width: 150px;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 15px 30px;
+}
+
+.message.received {
+    background-color: #d6f9ba;
+}
+
+.message.sent {
+    background-color: #fff;
+    margin-left: auto;
+}
+
+.sentDate {
+    color: #b1b1b1;
+    text-align: right;
+    font-size: 11px;
 }
 
 .bottom-ground {

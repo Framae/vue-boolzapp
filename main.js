@@ -74,7 +74,7 @@ const app = new Vue (
                 ],
                 },
                 {
-                name: 'Luisa',
+                name: 'Sergio',
                 avatar: '_4',
                 visible: true,
                 messages: [
@@ -90,10 +90,13 @@ const app = new Vue (
                 }
                 ],
                 },
-                ]
+                ],
+                active: 0,
         },
         methods: {
-
+            setActive(indice) {
+                this.active = indice;
+            }
         }
     }
 );
