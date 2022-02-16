@@ -67,26 +67,32 @@
                                 </div>
                             </div>
                             <div class="divIcons">
-                                <i class="fas fa-circle-notch"></i>
+                                <i class="fas fa-search"></i>
                                 <i class="fas fa-paperclip"></i>
                                 <i class="fas fa-ellipsis-v"></i>
                             </div>
                         </div>
 
                         <div class="middle-ground">
-                            <div class="message received">
-                                lorem ipsum
-                                <div class="sentDate">
-                                    10/12/2024
-                                </div>
-                            </div>
 
-                            <div class="message sent">
-                                lorem ipsum
-                                <div class="sentDate">
-                                    10/12/2024
+                            <div v-for="message in contacts[active].messages" class="message" :class="message.status">
+                                {{message.text}}
+                                <div class="sentDate">{{message.date}}</div>
+                                <!-- <div class="message received">
+                                    lorem ipsum
+                                    <div class="sentDate">
+                                        10/12/2024
+                                    </div>
                                 </div>
+    
+                                <div class="message sent">
+                                    lorem ipsum
+                                    <div class="sentDate">
+                                        10/12/2024
+                                    </div>
+                                </div> -->
                             </div>
+            
                         </div>
 
                         <div class="bottom-ground">
