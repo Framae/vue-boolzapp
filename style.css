@@ -78,17 +78,52 @@
     color: #b1b1b1;
 }
 
-.sidebar-middle {
+.sidebar-blue {
     height: 80px;
     width: 100%;
     background-color: #8edafd;
 }
+
+.sidebar-search {
+    width: 100%;
+    height: 45px;
+    background-color: #fafafa;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+}
+
+.search {
+    width: 98%;
+    margin: auto;
+    height: 90%;
+    border-radius: 5px;
+    background-color: white;
+    padding-left: 50px;
+}
+
+/* sidebar-bottom rules */
 
 .sidebar-bottom {
     width: 100%;
     height: calc(100vh - 180px);
     background-color: white;
     overflow-y: scroll;
+}
+
+.contact {
+    display: flex;
+    padding: 10px;
+}
+
+.c-image img {
+    height: 60px;
+    padding: 0 15px;
+    border-radius: 50%;
+}
+
+.contact.active, .contact:hover {
+    background-color: #eaeaea;
 }
 
 .ground {
